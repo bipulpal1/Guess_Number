@@ -1,9 +1,9 @@
 import java.util.*;
 
-class Game {
+class Game_Start {
     int computer;
 
-    public Game() {
+    public Game_Start() {
         Random random_number = new Random();
         computer = random_number.nextInt(100);
         System.out.println("Guess Any Number In Between 1 to 100 : ");
@@ -38,7 +38,7 @@ public class Number_Game {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter How much steps to guess the number: ");
         int Steps_limit = sc.nextInt();
-        Game g = new Game();
+        Game_Start g = new Game_Start();
         do {
             user_input = takeUserInput();
             computer_guess = g.computerNo();
